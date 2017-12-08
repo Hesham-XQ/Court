@@ -95,7 +95,7 @@
                     style="@style/button_layout"
                     android:background="#FF7043"
                     android:onClick="redcardrm"
-                    android:text="@string/red" />
+                    android:text="@string/red"/>
                 <!-- *********   RED Cards   ********** -->
             </LinearLayout>
 
