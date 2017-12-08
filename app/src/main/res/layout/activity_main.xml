@@ -3,7 +3,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:fillViewport="true">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -32,12 +31,12 @@
                     android:layout_marginTop="16dp"
                     android:text="@string/Real_Madrid"
                     android:textColor="@android:color/background_dark"
-                    android:textSize="25sp"
+                    android:textSize="@dimen/title_size"
                     android:textStyle="bold" />
 
                 <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="@dimen/img_width_height"
+                    android:layout_height="@dimen/img_width_height"
                     android:layout_gravity="center"
                     android:src="@drawable/real" />
 
@@ -52,12 +51,7 @@
                     android:textSize="60sp"></TextView>
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    style="@style/button_layout"
                     android:background="#81C784"
                     android:onClick="goalrm"
                     android:text="@string/goal"
@@ -75,12 +69,7 @@
                     android:textSize="45sp"></TextView>
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    style="@style/button_layout"
                     android:background="#00B0FF"
                     android:onClick="foulrm"
                     android:text="@string/foul"
@@ -99,12 +88,7 @@
                     android:textSize="30sp"></TextView>
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    style="@style/button_layout"
                     android:background="#FFFF8D"
 
                     android:onClick="yellowcardrm"
@@ -124,12 +108,7 @@
                     android:textSize="30sp"></TextView>
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    style="@style/button_layout"
                     android:background="#FF7043"
                     android:onClick="redcardrm"
                     android:text="@string/red" />
@@ -149,14 +128,13 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="16dp"
                     android:text="@string/Barcelona"
-
                     android:textColor="#0000ff"
-                    android:textSize="25sp"
+                    android:textSize="@dimen/title_size"
                     android:textStyle="bold" />
 
                 <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="@dimen/img_width_height"
+                    android:layout_height="@dimen/img_width_height"
                     android:layout_gravity="center"
                     android:src="@drawable/barcelona" />
 
@@ -170,12 +148,7 @@
                     android:textSize="60sp"></TextView>
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    style="@style/button_layout"
                     android:background="#81C784"
                     android:onClick="goalb"
                     android:text="@string/goal" />
@@ -191,12 +164,7 @@
                     android:textSize="45sp"></TextView>
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    style="@style/button_layout"
                     android:background="#00B0FF"
                     android:onClick="foulb"
                     android:text="@string/foul" />
@@ -213,12 +181,7 @@
                     android:textSize="30sp"></TextView>
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    style="@style/button_layout"
                     android:background="#FFFF8D"
                     android:onClick="yellowcardb"
                     android:text="@string/yellow" />
@@ -235,12 +198,7 @@
                     android:textSize="30sp"></TextView>
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    style="@style/button_layout"
                     android:background="#FF7043"
                     android:onClick="redcardb"
                     android:text="@string/red" />
