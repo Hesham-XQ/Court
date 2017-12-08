@@ -40,72 +40,56 @@
                     android:layout_gravity="center"
                     android:src="@drawable/real" />
 
-
                 <TextView
                     android:id="@+id/goalRM"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:text="0"
-                    android:textSize="60sp"></TextView>
+                    style="@style/text_layout"
+                    android:layout_marginBottom="@dimen/text_margin_bottom"
+                    android:text="@string/initial_value"
+                    android:textSize="60sp" />
 
                 <Button
                     style="@style/button_layout"
                     android:background="#81C784"
                     android:onClick="goalrm"
-                    android:text="@string/goal"
-
-                    />
+                    android:text="@string/goal" />
 
                 <!-- *********   FOULS   ********** -->
                 <TextView
                     android:id="@+id/foulRM"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:text="0"
-                    android:textSize="45sp"></TextView>
+                    style="@style/text_layout"
+                    android:layout_marginBottom="@dimen/text_margin_bottom"
+                    android:text="@string/initial_value"
+                    android:textSize="45sp" />
 
                 <Button
                     style="@style/button_layout"
                     android:background="#00B0FF"
                     android:onClick="foulrm"
-                    android:text="@string/foul"
-
-                    />
+                    android:text="@string/foul" />
                 <!-- *********   FOULS   ********** -->
 
                 <!-- *********   Yellow Cards   ********** -->
                 <TextView
                     android:id="@+id/ycardRM"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:text="0"
-                    android:textSize="30sp"></TextView>
+                    style="@style/text_layout"
+                    android:layout_marginBottom="@dimen/text_margin_bottom"
+                    android:text="@string/initial_value"
+                    android:textSize="30sp" />
 
                 <Button
                     style="@style/button_layout"
                     android:background="#FFFF8D"
-
                     android:onClick="yellowcardrm"
-                    android:text="@string/yellow"
-
-                    />
+                    android:text="@string/yellow" />
                 <!-- *********   Yellow Cards   ********** -->
 
                 <!-- *********   RED Cards   ********** -->
                 <TextView
                     android:id="@+id/rcardRM"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:text="0"
-                    android:textSize="30sp"></TextView>
+                    style="@style/text_layout"
+                    android:layout_marginBottom="@dimen/text_margin_bottom"
+                    android:text="@string/initial_value"
+                    android:textSize="30sp" />
 
                 <Button
                     style="@style/button_layout"
@@ -140,12 +124,10 @@
 
                 <TextView
                     android:id="@+id/goalB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:text="0"
-                    android:textSize="60sp"></TextView>
+                    style="@style/text_layout"
+                    android:layout_marginBottom="@dimen/text_margin_bottom"
+                    android:text="@string/initial_value"
+                    android:textSize="60sp" />
 
                 <Button
                     style="@style/button_layout"
@@ -156,12 +138,10 @@
                 <!-- *********   FOULS   ********** -->
                 <TextView
                     android:id="@+id/foulB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:text="0"
-                    android:textSize="45sp"></TextView>
+                    style="@style/text_layout"
+                    android:layout_marginBottom="@dimen/text_margin_bottom"
+                    android:text="@string/initial_value"
+                    android:textSize="45sp" />
 
                 <Button
                     style="@style/button_layout"
@@ -173,12 +153,10 @@
                 <!-- *********   Yellow Cards   ********** -->
                 <TextView
                     android:id="@+id/ycardB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:text="0"
-                    android:textSize="30sp"></TextView>
+                    style="@style/text_layout"
+                    android:layout_marginBottom="@dimen/text_margin_bottom"
+                    android:text="@string/initial_value"
+                    android:textSize="30sp" />
 
                 <Button
                     style="@style/button_layout"
@@ -190,12 +168,10 @@
                 <!-- *********   RED Cards   ********** -->
                 <TextView
                     android:id="@+id/rcardB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:text="0"
-                    android:textSize="30sp"></TextView>
+                    style="@style/text_layout"
+                    android:layout_marginBottom="@dimen/text_margin_bottom"
+                    android:text="@string/initial_value"
+                    android:textSize="30sp" />
 
                 <Button
                     style="@style/button_layout"
