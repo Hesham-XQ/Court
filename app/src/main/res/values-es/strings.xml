@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CourtCounterApp</string>
+    <string name="goal">Gol</string>
+    <string name="Real_Madrid">Real Madrid</string>
+    <string name="Barcelona">Barcelona</string>
+    <string name="pie">CourtCounterApp</string>
+    <string name="foul">falta</string>
+    <string name="yellow">tarjeta amarilla</string>
+    <string name="red">"tarjeta roja "</string>
+    <string name="reset">Reiniciar</string>
+</resources>

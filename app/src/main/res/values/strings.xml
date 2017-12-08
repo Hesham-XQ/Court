@@ -1,0 +1,12 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">CourtCounterApp</string>
+    <string name="pie">CourtCounterApp</string>
+    <!-- *********************layout strings******************  -->
+    <string name="Real_Madrid">Real Madrid</string>
+    <string name="Barcelona">Barcelona</string>
+    <string name="goal">goal</string>
+    <string name="foul">foul</string>
+    <string name="yellow">yellow card</string>
+    <string name="red">red card</string>
+    <string name="reset">reset</string>
+</resources>
