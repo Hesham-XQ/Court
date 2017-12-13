@@ -16,7 +16,8 @@ public class MainActivity extends AppCompatActivity {
     int yellowCardForB = 0;
     int redCardForB = 0;
 
-    /* *********************display methods for realmadrid***************************** */
+    // display methods for real madrid
+
     public void displayGoalRM(int score) {
         TextView scoreView = (TextView) findViewById(R.id.goalRM);
         scoreView.setText(String.valueOf(score));
@@ -36,9 +37,8 @@ public class MainActivity extends AppCompatActivity {
         TextView RcardView = (TextView) findViewById(R.id.rcardRM);
         RcardView.setText(String.valueOf(rcard_r));
     }
-    /* *********************display methods for realmadrid***************************** */
 
-    /* *********************display methods for barcelona***************************** */
+    //display methods for barcelona
     public void displayGoalB(int goal_b) {
         TextView goalView_b = (TextView) findViewById(R.id.goalB);
         goalView_b.setText(String.valueOf(goal_b));
@@ -58,9 +58,10 @@ public class MainActivity extends AppCompatActivity {
         TextView red_b = (TextView) findViewById(R.id.rcardB);
         red_b.setText(String.valueOf(rcard_b));
     }
-    /* *********************display methods for barcelona***************************** */
 
-    /* *********************updating values for real madrid ***************************** */
+
+    //updating values for real madrid
+
     public void goalrm(View view) {
         goalForRm += 1;
         displayGoalRM(goalForRm);
@@ -81,9 +82,9 @@ public class MainActivity extends AppCompatActivity {
         displayCardRM(yellowCardForRm);
     }
 
- /* *********************updating values for real madrid***************************** */
 
-    /* *********************updating values for barcelona***************************** */
+    //updating values for barcelona
+
     public void goalb(View view) {
         goalForB += 1;
         displayGoalB(goalForB);
@@ -104,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
         displayCardB(yellowCardForB);
     }
 
-    /* *********************updating values for barcelona***************************** */
+    // onCreate method
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-/* ***********************reset method*************************************** */
+// reset method
 
     public void reset(View v) {
         goalForRm = 0;
@@ -134,8 +135,6 @@ public class MainActivity extends AppCompatActivity {
         displayCardB(yellowCardForB);
         displayRcardB(redCardForB);
     }
-/* ************************reset method*************************************** */
-
 
 }
 
