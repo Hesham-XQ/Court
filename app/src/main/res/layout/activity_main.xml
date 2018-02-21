@@ -6,17 +6,17 @@
     android:fillViewport="true">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:context="com.example.android.courtcounterapp.MainActivity">
 
         <LinearLayout
             android:id="@+id/lin"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:baselineAligned="false">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -25,27 +25,20 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="16dp"
                     android:text="@string/Real_Madrid"
                     android:textColor="@android:color/background_dark"
-                    android:textSize="@dimen/title_size"
-                    android:textStyle="bold" />
+                    style="@style/team_name" />
 
                 <ImageView
-                    android:layout_width="@dimen/img_width_height"
-                    android:layout_height="@dimen/img_width_height"
-                    android:layout_gravity="center"
-                    android:src="@drawable/real" />
+                    android:contentDescription="@string/madrid_logo"
+                    android:src="@drawable/real"
+                    style="@style/team_logo" />
 
                 <TextView
                     android:id="@+id/goalRM"
                     style="@style/text_layout"
-                    android:layout_marginBottom="@dimen/text_margin_bottom"
                     android:text="@string/initial_value"
-                    android:textSize="60sp" />
+                    android:textSize="@dimen/goal_text_60" />
 
                 <Button
                     style="@style/button_layout"
@@ -53,41 +46,33 @@
                     android:onClick="goalrm"
                     android:text="@string/goal" />
 
-                <!-- *********   FOULS   ********** -->
                 <TextView
                     android:id="@+id/foulRM"
                     style="@style/text_layout"
-                    android:layout_marginBottom="@dimen/text_margin_bottom"
                     android:text="@string/initial_value"
-                    android:textSize="45sp" />
+                    android:textSize="@dimen/foul_text_45" />
 
                 <Button
                     style="@style/button_layout"
                     android:background="#00B0FF"
                     android:onClick="foulrm"
                     android:text="@string/foul" />
-                <!-- *********   FOULS   ********** -->
 
-                <!-- *********   Yellow Cards   ********** -->
                 <TextView
                     android:id="@+id/ycardRM"
                     style="@style/text_layout"
-                    android:layout_marginBottom="@dimen/text_margin_bottom"
                     android:text="@string/initial_value"
-                    android:textSize="30sp" />
+                    android:textSize="@dimen/card_text_30" />
 
                 <Button
                     style="@style/button_layout"
                     android:background="#FFFF8D"
                     android:onClick="yellowcardrm"
                     android:text="@string/yellow" />
-                <!-- *********   Yellow Cards   ********** -->
 
-                <!-- *********   RED Cards   ********** -->
                 <TextView
                     android:id="@+id/rcardRM"
                     style="@style/text_layout"
-                    android:layout_marginBottom="@dimen/text_margin_bottom"
                     android:text="@string/initial_value"
                     android:textSize="30sp" />
 
@@ -96,10 +81,8 @@
                     android:background="#FF7043"
                     android:onClick="redcardrm"
                     android:text="@string/red"/>
-                <!-- *********   RED Cards   ********** -->
             </LinearLayout>
 
-            <!-- *********   Barcelona  ********** -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -107,27 +90,20 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="16dp"
                     android:text="@string/Barcelona"
                     android:textColor="#0000ff"
-                    android:textSize="@dimen/title_size"
-                    android:textStyle="bold" />
+                    style="@style/team_name" />
 
                 <ImageView
-                    android:layout_width="@dimen/img_width_height"
-                    android:layout_height="@dimen/img_width_height"
-                    android:layout_gravity="center"
+                    android:contentDescription="@string/barca_logo"
+                    style="@style/team_logo"
                     android:src="@drawable/barcelona" />
 
                 <TextView
                     android:id="@+id/goalB"
                     style="@style/text_layout"
-                    android:layout_marginBottom="@dimen/text_margin_bottom"
                     android:text="@string/initial_value"
-                    android:textSize="60sp" />
+                    android:textSize="@dimen/goal_text_60" />
 
                 <Button
                     style="@style/button_layout"
@@ -135,53 +111,42 @@
                     android:onClick="goalb"
                     android:text="@string/goal" />
 
-                <!-- *********   FOULS   ********** -->
                 <TextView
                     android:id="@+id/foulB"
                     style="@style/text_layout"
-                    android:layout_marginBottom="@dimen/text_margin_bottom"
                     android:text="@string/initial_value"
-                    android:textSize="45sp" />
+                    android:textSize="@dimen/foul_text_45" />
 
                 <Button
                     style="@style/button_layout"
                     android:background="#00B0FF"
                     android:onClick="foulb"
                     android:text="@string/foul" />
-                <!-- *********   FOULS   ********** -->
 
-                <!-- *********   Yellow Cards   ********** -->
                 <TextView
                     android:id="@+id/ycardB"
                     style="@style/text_layout"
-                    android:layout_marginBottom="@dimen/text_margin_bottom"
                     android:text="@string/initial_value"
-                    android:textSize="30sp" />
+                    android:textSize="@dimen/card_text_30" />
 
                 <Button
                     style="@style/button_layout"
                     android:background="#FFFF8D"
                     android:onClick="yellowcardb"
                     android:text="@string/yellow" />
-                <!-- *********   Yellow Cards   ********** -->
 
-                <!-- *********   RED Cards   ********** -->
                 <TextView
                     android:id="@+id/rcardB"
                     style="@style/text_layout"
-                    android:layout_marginBottom="@dimen/text_margin_bottom"
                     android:text="@string/initial_value"
-                    android:textSize="30sp" />
+                    android:textSize="@dimen/card_text_30"/>
 
                 <Button
                     style="@style/button_layout"
                     android:background="#FF7043"
                     android:onClick="redcardb"
                     android:text="@string/red" />
-
-                <!-- *********   RED Cards   ********** -->
             </LinearLayout>
-
 
         </LinearLayout>
 
@@ -191,7 +156,7 @@
             android:layout_below="@id/lin"
             android:layout_centerHorizontal="true"
             android:onClick="reset"
-            android:text="RESET" />
+            android:text="@string/reset" />
     </RelativeLayout>
 
 </ScrollView>

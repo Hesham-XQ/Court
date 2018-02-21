@@ -3,4 +3,8 @@
     <dimen name="img_width_height">200dp</dimen>
     <dimen name="title_size">25sp</dimen>
     <dimen name="text_margin_bottom">10dp</dimen>
+    <dimen name="goal_text_60">60sp</dimen>
+    <dimen name="team_margin_16">16dp</dimen>
+    <dimen name="foul_text_45">45sp</dimen>
+    <dimen name="card_text_30">30sp</dimen>
 </resources>
